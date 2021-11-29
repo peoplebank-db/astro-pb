@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #333;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Peoplebank_copy" data-name="Peoplebank copy" class="cls-1" d="M17.66,12.48V53.568Q17.66,56,20.284,56H27a2.178,2.178,0,0,0,2.5-2.432V39.936h3.776q7.935,0,12.864-4.032A13.653,13.653,0,0,0,51,24.9q0-7.68-4.8-11.3T31.42,9.984H20.284q-2.625,0-2.624,2.5h0ZM38.908,24.9q0,6.336-6.72,6.336H29.5V18.688h2.688q6.72,0,6.72,6.208h0Z"/>
+</svg>

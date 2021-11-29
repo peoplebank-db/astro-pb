@@ -1,0 +1,1 @@
+console.log("%c ¯\\_(ツ)_/¯", "font-size: 2rem")
