@@ -147,10 +147,14 @@ li {
 }
 
 .gap-s {
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
 }
 
 .gap-m {
+  margin-bottom: 3rem;
+}
+
+.gap-l {
   margin-bottom: 6rem;
 }
 
@@ -166,8 +170,16 @@ li {
   top: -0.25rem;
 }
 
-.center-text {
+.text-center {
   text-align: center;
+}
+
+.btn {
+  background: var(--ink);
+  color: #fff;
+  padding: 1rem 2rem;
+  font-size: 1.125rem;
+  display: inline-block;
 }
 
 /* NAV */
@@ -283,7 +295,7 @@ li {
   font-weight: bold;
   display: inline-block;
   margin: 0 auto 0 0;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 
 .header a:hover {
@@ -315,14 +327,14 @@ li {
 .functions {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: left;
   gap: 3rem;
 }
 
 .function-item {
   display: grid;
   grid-template-columns: 14rem 24rem;
-  align-items: top;
+  align-items: flex-start;
   gap: 2rem;
 }
 
@@ -347,7 +359,7 @@ li {
 }
 
 .hilight {
-  text-align: center;
+  text-align: left;
   padding: 2rem;
 }
 
@@ -356,7 +368,7 @@ li {
 .shoutout {
   background: #ffd255;
   background-size: contain;
-  text-align: center;
+  text-align: left;
 }
 
 .shoutout svg {

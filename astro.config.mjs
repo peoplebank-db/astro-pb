@@ -10,4 +10,8 @@
 export default /** @type {import('astro').AstroUserConfig} */ ({
   // Comment out "renderers: []" to enable Astro's default component support.
   renderers: [],
+  buildOptions: {
+    sitemap: true,
+    site: 'https://pb4demo.peoplebank.com/pb3/corporate/peoplebank/'
+  },
 });
