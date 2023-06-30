@@ -1,5 +1,7 @@
 
 ---
+import "../css/styles.css";
+import favicon from "../img/favicon.svg"
 const { title, description, permalink } = Astro.props;
 ---
 
@@ -26,7 +28,5 @@ const { title, description, permalink } = Astro.props;
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content="https://astro.build/social.jpg?v=1" />
 
-<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" type="image/svg+xml" href={favicon}>
 <link rel="stylesheet" href="https://use.typekit.net/boz4dxd.css">
-<link rel="stylesheet" href={Astro.resolve('../css/styles.css')} />
-<script src={Astro.resolve('../js/main.js')} defer />
