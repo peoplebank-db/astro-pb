@@ -1,20 +1,110 @@
 ---
-import logo from "../img/pb-logo.svg";
+import logo from "../img/pb-logo-white.svg";
 import sprites from "../img/sprites.svg";
 ---
-<footer class="footer">
-  <div class="width-l">
+<footer class="container">
+  <div class="content">
     <div>
-      <img src={logo} alt="Peoplebank logo" />
-      <svg><use xlink:href={`${sprites}#pb-logo`}></use></svg>
+      <img class="logo" src={logo} alt="Peoplebank logo" />
       <h3>Award winning E-Recruitment solutions built just for you.</h3>
-      <p>Copyright © <span id="copyright">2022</span> Peoplebank. All rights reserved.</p>
     </div>
     <div>
-      <h4>Contact Us</h4>
-      <p>+44 131 653 1258</p>
-      <p><a href="mailto:sales@peoplebank.com">sales@peoplebank.com</a></p>
-      <p><a href="/pb3/corporate/peoplebank/privacy-policy">Privacy Policy</a></p>
+      <h4>Contact</h4>
+      <div class="contact">
+        <svg>
+          <use xlink:href={`${sprites}#phone`}></use>
+        </svg>
+        +44 131 653 1258
+      </div>
+      <div class="contact">
+        <svg>
+          <use xlink:href={`${sprites}#email`}></use>
+        </svg>
+        <a href="mailto:sales@peoplebank.com">sales@peoplebank.com</a>
+      </div>
     </div>
   </div>
+  <div class="copyright">Copyright © <span id="copyright">2022</span> Peoplebank. All rights reserved.</div>
 </footer>
+
+<style>
+
+  footer {
+    background: var(--clr-secondary);
+    color: #fff;
+    padding-block: 3rem;
+    position: sticky;
+    top: 100vh;
+    --cnt-padding: 2.5rem 2rem;
+  }
+
+  .content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .logo {
+    max-width: 14rem;
+  }
+
+  .contact {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+  }
+
+  .contact svg {
+    fill: #fff;
+    display: inline-block;
+    max-width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.5rem;
+  }
+
+  footer h3 {
+    font-size: 0.875rem;
+    margin: 0.5rem 0 1.5rem;
+  }
+
+  footer p {
+    margin: 0;
+  }
+
+  footer h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0 0 0.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  footer h4::after {
+    content: '';
+    display: block;
+    border-bottom: 2px solid #FDC00F;
+    height: 6px;
+  }
+
+  footer a {
+    color: #fff;
+  }
+
+  footer a:hover {
+    color: #fff;
+  }
+
+  .copyright {
+    text-align: center;
+    font-size: 0.875rem;
+    margin-top: 1rem;
+    padding: 1rem;
+  }
+
+</style>
+
+<script>
+  document.getElementById("copyright").innerHTML = new Date()
+    .getFullYear()
+    .toString();
+</script>

@@ -6,7 +6,7 @@
   --clr-primary: #ffb600;
   --clr-primary-dark: #e79f04;
   --clr-secondary: #00517C;
-  --clr-secondary: #00AEEF;
+  --clr-secondary-dark: #003754;
 
   --width-l: 90rem;
   --width-m: 72rem;
@@ -61,6 +61,7 @@ body {
   font-family: var(--fnt-body);
   line-height: 1;
   background: var(--clr-white);
+  overflow-y: scroll;
 }
 
 @media screen and (min-width: 600px) {
@@ -210,13 +211,17 @@ li {
 .hero {
   color: #fff;
   align-items: center;
-  background: url(/pb3/corporate/peoplebank/assets/podio-hp-hero.jpg) #00517c no-repeat center right;
   --cnt-padding: 0;
 }
 
 .hero-content {
-  background: linear-gradient(90deg, rgba(0,81,124,1) 40%, rgba(0,0,0,0) 100%);
-  padding: 9rem 0;
+  background: linear-gradient(125deg, var(--clr-secondary) 30%, var(--clr-secondary-dark) 100%);
+  padding: 8rem 0 8rem 4rem;
+}
+
+.hero-home {
+  background: linear-gradient(90deg, rgba(0,81,124,1) 30%, rgba(0,0,0,0) 100%), url(/pb3/corporate/peoplebank/assets/podio-hp-hero.jpg) no-repeat center right;
+  padding: 8rem 0 8rem 4rem;
 }
 
 .hero h1 {
@@ -241,7 +246,7 @@ li {
 .hero p {
   font-size: 1.5rem;
   font-weight: 400;
-  margin: 2rem 0 1rem;
+  margin: 3rem 0 2rem;
 }
 
 .cta {
@@ -341,55 +346,4 @@ li {
   max-width: 18rem;
   text-align: center;
   margin: 1rem auto 2rem;
-}
-
-/* FOOTER */
-
-.footer {
-  background: var(--clr-secondary);
-  border-top: 3px solid var(--clr-primary);
-  color: #fff;
-  padding: 3rem var(--edge-gap);
-  position: sticky;
-  top: 100vh;
-}
-
-.footer > div {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-}
-
-.footer svg {
-  width: 10rem;
-}
-
-.footer h3 {
-  font-size: 1rem;
-  margin: 0.5rem 0 1.5rem;
-}
-
-.footer p {
-  margin: 0;
-}
-
-.footer h4 {
-  font-size: 1.25rem;
-  font-weight: 600;
-  margin: 0 0 0.5rem;
-}
-
-.footer h4::after {
-  content: '';
-  display: block;
-  border-bottom: 2px solid #FDC00F;
-  height: 6px;
-}
-
-.footer a {
-  color: #fff;
-}
-
-.footer a:hover {
-  color: #fff;
 }
